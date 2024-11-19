@@ -1,102 +1,100 @@
-```markdown
-# Patika+ BackEnd Web Development Bootcamp 8. E?itimi: Asp.Net Core Bo? �rnek
+# Patika+ BackEnd Web Development Bootcamp 8. Eğitimi: Asp.Net Core Boş Örnek
 
-## Uygulama Gereksinimleri ve Yap?land?rma
+## Uygulama Gereksinimleri ve Yapılandırma
 
-Bu pratikte, bir **ASP.NET Core Empty** projesi olu?turup, projedeki yap?lar? **MVC tasar?m deseni**ne uygun olarak yap?land?rman?z beklenmektedir.
+Bu pratikte, bir **ASP.NET Core Empty** projesi oluşturup, projedeki yapıları **MVC tasarım deseni**ne uygun olarak yapılandırmanız beklenmektedir.
 
-### Yap?land?r?lacak Klas�rler
+### Yapılandırılacak Klasörler
 
-1. **Controllers Klas�r�:**
-   - Controllers ad?nda bir klas�r olu?turun.
+1. **Controllers Klasörü:**
+   - Controllers adında bir klasör oluşturun.
 
-2. **Models Klas�r�:**
-   - Models ad?nda bir klas�r olu?turun.
+2. **Models Klasörü:**
+   - Models adında bir klasör oluşturun.
 
-3. **Views Klas�r�:**
-   - Views ad?nda bir klas�r olu?turun.
+3. **Views Klasörü:**
+   - Views adında bir klasör oluşturun.
 
-4. **wwwroot Klas�r�:**
-   - wwwroot ad?nda bir klas�r olu?turun.
+4. **wwwroot Klasörü:**
+   - wwwroot adında bir klasör oluşturun.
 
-### Program.cs Dosyas? Konfig�rasyonu
+### Program.cs Dosyası Konfigürasyonu
 
-A?a??daki i?lemleri ger�ekle?tirmek i�in **Program.cs** dosyas?nda uygun yap?land?rmalar? yapman?z gerekmektedir:
+Aşağıdaki işlemleri gerçekleştirmek için **Program.cs** dosyasında uygun yapılandırmaları yapmanız gerekmektedir:
 
 1. **MVC Servislerinin Eklenmesi:**
-   - MVC uygulama �zelliklerini etkinle?tirmek ve hem view'leri hem de controller'lar? kullanabilmek i�in gerekli servisleri ekleyin.
+   - MVC uygulama özelliklerini etkinleştirmek ve hem view'leri hem de controller'ları kullanabilmek için gerekli servisleri ekleyin.
    
-2. **Statik Dosyalar?n Kullan?m?n?n Belirtilmesi:**
-   - wwwroot klas�r�nde bulunan statik dosyalar?n kullan?lmas?n? sa?layacak konfig�rasyonlar? ekleyin.
+2. **Statik Dosyaların Kullanımının Belirtilmesi:**
+   - wwwroot klasöründe bulunan statik dosyaların kullanılmasını sağlayacak konfigürasyonları ekleyin.
    
-3. **Routing Konfig�rasyonu:**
-   - Taray?c?dan gelen isteklerin do?ru ?ekilde y�nlendirilmesini sa?lamak amac?yla routing yap?land?rmas?n? tamamlay?n.
+3. **Routing Konfigürasyonu:**
+   - Tarayıcıdan gelen isteklerin doğru şekilde yönlendirilmesini sağlamak amacıyla routing yapılandırmasını tamamlayın.
 
-4. **Varsay?lan Routing:**
-   - Anasayfan?z i�in bir varsay?lan routing yap?land?rmas? ekleyin.
+4. **Varsayılan Routing:**
+   - Anasayfanız için bir varsayılan routing yapılandırması ekleyin.
 
-### A�?klamalar
+### Açıklamalar
 
-**Program.cs** dosyas?n?n en alt k?sm?nda a?a??daki kavramlar? yorum sat?rlar?nda a�?klay?n?z:
+**Program.cs** dosyasının en alt kısmında aşağıdaki kavramları yorum satırlarında açıklayınız:
 
-- **Controller**: Kullan?c?dan gelen istekleri kar??lar ve uygun bir i? mant??? i?lemi ger�ekle?tirerek sonu�lar? View'e iletir.
-- **Action**: Controller i�indeki her bir i?levdir, kullan?c? isteklerini i?leyip sonu�lar? d�nd�r�r.
-- **Model**: Veriyi temsil eder ve i? mant??? ile veritaban? etkile?imlerini y�netir.
-- **View**: Kullan?c?ya g�sterilen sayfad?r, Model veya Controller'dan gelen veriyi sunar.
-- **Razor**: HTML i�indeki dinamik C# kodlar?yla i�eri?i �retmek i�in kullan?lan ?ablonlama motorudur.
-- **RazorView**: Razor motorunu kullanan View dosyalar?d?r (�rne?in, `.cshtml`).
-- **wwwroot**: Statik dosyalar?n (CSS, JS, resimler) sakland??? dizindir.
-- **builder.Build()**: Uygulaman?n yap?land?rma a?amas?n? tamamlayarak �al??maya haz?r hale getirir.
-- **app.Run()**: Uygulaman?n ba?lat?lmas?n? ve gelen istekleri dinlemesini sa?lar.
+- **Controller**: Kullanıcıdan gelen istekleri karşılar ve uygun bir iş mantığı işlemi gerçekleştirerek sonuçları View'e iletir.
+- **Action**: Controller içindeki her bir işlevdir, kullanıcı isteklerini işleyip sonuçları döndürür.
+- **Model**: Veriyi temsil eder ve iş mantığı ile veritabanı etkileşimlerini yönetir.
+- **View**: Kullanıcıya gösterilen sayfadır, Model veya Controller'dan gelen veriyi sunar.
+- **Razor**: HTML içindeki dinamik C# kodlarıyla içeriği üretmek için kullanılan şablonlama motorudur.
+- **RazorView**: Razor motorunu kullanan View dosyalarıdır (örneğin, `.cshtml`).
+- **wwwroot**: Statik dosyaların (CSS, JS, resimler) saklandığı dizindir.
+- **builder.Build()**: Uygulamanın yapılandırma aşamasını tamamlayarak çalışmaya hazır hale getirir.
+- **app.Run()**: Uygulamanın başlatılmasını ve gelen istekleri dinlemesini sağlar.
 
 ---
 
-## MVC Kavramlar? A�?klamas?
+## MVC Kavramları Açıklaması
 
 ### 1. Controller (Denetleyici)
-- **G�revi**: MVC yap?s?nda, kullan?c? isteklerini kar??layarak onlar? i?lemekten sorumludur. Controller, gelen HTTP isteklerini kar??lar, uygun i?lemleri yapar ve sonu�lar? ilgili g�r�n�me (View) y�nlendirir.
-- **Nas?l �al???r**: �rne?in, bir �r�n detay?na ula?mak istendi?inde, taray?c?daki istek Controller taraf?ndan al?n?r, gerekli veriler elde edilir, i?lenir ve g�r�n�me g�nderilir.
-- **Kullan?m Amac?**: ?? mant???n? ve veriyi alarak kullan?c?ya anlaml? bir �?kt? sunar.
+- **Görevi**: MVC yapısında, kullanıcı isteklerini karşılayarak onları işlemekten sorumludur. Controller, gelen HTTP isteklerini karşılar, uygun işlemleri yapar ve sonuçları ilgili görünüme (View) yönlendirir.
+- **Nasıl Çalışır**: Örneğin, bir ürün detayına ulaşmak istendiğinde, tarayıcıdaki istek Controller tarafından alınır, gerekli veriler elde edilir, işlenir ve görünüme gönderilir.
+- **Kullanım Amacı**: İş mantığını ve veriyi alarak kullanıcıya anlamlı bir çıktı sunar.
 
 ### 2. Action (Eylem)
-- **G�revi**: Controller i�inde tan?mlanan bir y�ntemdir. Her bir Action, spesifik bir i?levi yerine getirir.
-- **Nas?l �al???r**: �rne?in, bir �r�n eklemek veya silmek i�in `CreateProduct()` ya da `DeleteProduct()` gibi Action�lar kullan?labilir.
-- **Kullan?m Amac?**: Kullan?c?n?n yapt??? bir iste?i yerine getirir; �rne?in, veri kaydetme, listeleme, g�ncelleme gibi i?lemler.
+- **Görevi**: Controller içinde tanımlanan bir yöntemdir. Her bir Action, spesifik bir işlevi yerine getirir.
+- **Nasıl Çalışır**: Örneğin, bir ürün eklemek veya silmek için `CreateProduct()` ya da `DeleteProduct()` gibi Action’lar kullanılabilir.
+- **Kullanım Amacı**: Kullanıcının yaptığı bir isteği yerine getirir; örneğin, veri kaydetme, listeleme, güncelleme gibi işlemler.
 
 ### 3. Model
-- **G�revi**: Veriyi temsil eder ve veriyle ilgili i?lemleri ger�ekle?tirir. Model, genellikle veritaban?yla etkile?imde bulunur ve i? mant??? ile ba?lant? kurar.
-- **Nas?l �al???r**: Model, veritaban?ndan ald??? veriyi Controller�a iletir veya Controller�dan ald??? veriyi veritaban?na kaydeder.
-- **Kullan?m Amac?**: Uygulamadaki t�m veri i?lerini �stlenir. �rne?in, kullan?c? bilgilerini veya �r�n listesini temsil eden modeller olabilir.
+- **Görevi**: Veriyi temsil eder ve veriyle ilgili işlemleri gerçekleştirir. Model, genellikle veritabanıyla etkileşimde bulunur ve iş mantığı ile bağlantı kurar.
+- **Nasıl Çalışır**: Model, veritabanından aldığı veriyi Controller’a iletir veya Controller’dan aldığı veriyi veritabanına kaydeder.
+- **Kullanım Amacı**: Uygulamadaki tüm veri işlerini üstlenir. Örneğin, kullanıcı bilgilerini veya ürün listesini temsil eden modeller olabilir.
 
-### 4. View (G�r�n�m)
-- **G�revi**: Kullan?c?ya sunulacak olan aray�zd�r. Model veya Controller�dan gelen veriyi al?r ve kullan?c?ya g�sterir.
-- **Nas?l �al???r**: �rne?in, bir �r�n listesini kullan?c?ya g�stermek i�in `ProductList` ad?nda bir View olu?turulur ve kullan?c?ya bu listeyi g�rselle?tirerek sunar.
-- **Kullan?m Amac?**: Veriyi kullan?c?ya anlaml? bir aray�z �zerinden sunmak.
+### 4. View (Görünüm)
+- **Görevi**: Kullanıcıya sunulacak olan arayüzdür. Model veya Controller’dan gelen veriyi alır ve kullanıcıya gösterir.
+- **Nasıl Çalışır**: Örneğin, bir ürün listesini kullanıcıya göstermek için `ProductList` adında bir View oluşturulur ve kullanıcıya bu listeyi görselleştirerek sunar.
+- **Kullanım Amacı**: Veriyi kullanıcıya anlamlı bir arayüz üzerinden sunmak.
 
 ### 5. Razor
-- **G�revi**: ASP.NET MVC�de View (g�r�n�m) olu?turmak i�in kullan?lan bir ?ablonlama motorudur.
-- **Nas?l �al???r**: C# kodunu HTML i�erisinde kolayca yazman? sa?lar. `@` i?areti ile C# kodu HTML i�inde �a?r?l?r.
-- **Kullan?m Amac?**: Dinamik i�erikler olu?turmak i�in kullan?l?r; �rne?in, bir �r�n fiyat?n? g�stermek i�in `@Model.Price` gibi bir ifade yaz?labilir.
+- **Görevi**: ASP.NET MVC’de View (görünüm) oluşturmak için kullanılan bir şablonlama motorudur.
+- **Nasıl Çalışır**: C# kodunu HTML içerisinde kolayca yazmanı sağlar. `@` işareti ile C# kodu HTML içinde çağrılır.
+- **Kullanım Amacı**: Dinamik içerikler oluşturmak için kullanılır; örneğin, bir ürün fiyatını göstermek için `@Model.Price` gibi bir ifade yazılabilir.
 
 ### 6. Razor View
-- **G�revi**: Razor motorunu kullanarak bir View dosyas? (�rne?in, `.cshtml` uzant?l? dosyalar) olarak olu?turulmu? sayfalard?r.
-- **Nas?l �al???r**: Kullan?c?dan gelen veriyi C# kodu ile i?leyip HTML olarak kullan?c?ya sunar.
-- **Kullan?m Amac?**: Controller�dan gelen veriyi kullan?c?ya g�sterir. Dinamik web sayfalar?n?n olu?turulmas?nda kullan?l?r.
+- **Görevi**: Razor motorunu kullanarak bir View dosyası (örneğin, `.cshtml` uzantılı dosyalar) olarak oluşturulmuş sayfalardır.
+- **Nasıl Çalışır**: Kullanıcıdan gelen veriyi C# kodu ile işleyip HTML olarak kullanıcıya sunar.
+- **Kullanım Amacı**: Controller’dan gelen veriyi kullanıcıya gösterir. Dinamik web sayfalarının oluşturulmasında kullanılır.
 
 ### 7. wwwroot
-- **G�revi**: Uygulaman?n statik dosyalar?n?n (resimler, CSS, JavaScript dosyalar? gibi) sakland??? dizindir.
-- **Nas?l �al???r**: T�m statik dosyalar bu klas�rde bar?nd?r?l?r ve istemciler (kullan?c?lar) do?rudan bu dizine eri?ebilir.
-- **Kullan?m Amac?**: Uygulaman?n g�rselli?ini ve etkile?imini sa?lamak i�in gereken dosyalar?n kullan?c?ya do?rudan sunulabilmesi amac?yla kullan?l?r.
+- **Görevi**: Uygulamanın statik dosyalarının (resimler, CSS, JavaScript dosyaları gibi) saklandığı dizindir.
+- **Nasıl Çalışır**: Tüm statik dosyalar bu klasörde barındırılır ve istemciler (kullanıcılar) doğrudan bu dizine erişebilir.
+- **Kullanım Amacı**: Uygulamanın görselliğini ve etkileşimini sağlamak için gereken dosyaların kullanıcıya doğrudan sunulabilmesi amacıyla kullanılır.
 
 ---
 
 ### 8. builder.Build()
-- **G�revi**: MVC uygulamas?nda, uygulama yap?land?rmas?n? tamamlayan ve �al??t?r?labilir hale getiren metottur.
-- **Nas?l �al???r**: `builder.Build()` �a?r?ld???nda uygulaman?n middleware (ara katman yaz?l?mlar?) ve di?er servisleri ba?lat?l?r. Bu ad?m tamamland?ktan sonra uygulama kullan?c? isteklerini kar??lamaya haz?r hale gelir.
-- **Kullan?m Amac?**: Uygulaman?n yap?land?rma s�recini sonland?rarak �al??maya haz?r hale getirmek.
+- **Görevi**: MVC uygulamasında, uygulama yapılandırmasını tamamlayan ve çalıştırılabilir hale getiren metottur.
+- **Nasıl Çalışır**: `builder.Build()` çağrıldığında uygulamanın middleware (ara katman yazılımlar) ve diğer servisleri başlatılır. Bu adım tamamlandıktan sonra uygulama kullanıcı isteklerini karşılamaya hazır hale gelir.
+- **Kullanım Amacı**: Uygulamanın yapılandırma sürecini sonlandırarak çalışmaya hazır hale getirmek.
 
 ### 9. app.Run()
-- **G�revi**: Uygulaman?n �al??t?r?lmas?n? sa?lar ve gelen HTTP isteklerini dinler.
-- **Nas?l �al???r**: `app.Run()` �a?r?ld?ktan sonra uygulama ba?lar ve gelen istekleri dinlemeye ba?lar. Bu metot �al??t?r?ld???nda, uygulama genellikle sonland?r?lana kadar �al??maya devam eder.
-- **Kullan?m Amac?**: Uygulaman?n �al??mas?n? ba?latmak ve s�rekli olarak gelen HTTP isteklerini dinlemek.
-```
+- **Görevi**: Uygulamanın çalıştırılmasını sağlar ve gelen HTTP isteklerini dinler.
+- **Nasıl Çalışır**: `app.Run()` çağrıldıktan sonra uygulama başlar ve gelen istekleri dinlemeye başlar. Bu metot çalıştırıldığında, uygulama genellikle sonlandırılana kadar çalışmaya devam eder.
+- **Kullanım Amacı**: Uygulamanın çalışmasını başlatmak ve sürekli olarak gelen HTTP isteklerini dinlemek.
